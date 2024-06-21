@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+    title=the title of the live page
+    meta charset=قابلية البرنامج للغات
+    meta description=ما يظهر للمتسخدم أسفل عنوان الصفحة عند البحث عنها
+    style=starting form to use css on an HTML file
+    link=link between an HTML file and CSS file so you can edit on the HTML file from CSS
+    head=doesnt appear to the user
+    body=what appears to the user
+    !doctype HTML=way to check the version of the visual studio
+    -->
+   <title>abdullah_fordy</title>
+   <meta charset="UTF-8">
+   <meta descripsion="my name is abood and my nickname is abood_fordy">
+   <style>
+
+   </style>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--
+    p=paragraph
+    b=bold font
+    u=underline the word/sentence
+    del=بتاع الخصومات وكدا
+    br=brick a new line 
+    i=خط مائل
+    sup=الأسس/القوى
+    sub=لأرقام المركبات الكيميائية مثل h2o
+    span=to edit the text with CSS
+    طريقة span=
+    <span style="color=any color"> any text</span>
+    hr=يفصل بين فقرتين
+    entities=علامات خاصة مثل علامة الكوبي رايت
+    to use it you should copy the entite name and paste it here the entities name is in the link in the following
+    entities page link=
+    https://www.w3schools.com/html/html_entities.asp
+    entities=
+    there is a screenshot on this laptop if there was no internet
+    -->
+    <!--
+    ترتيب الخطوط من أكبر للأصغر:
+    h1
+    h2
+    h3
+    h4
+    h5
+    h6
+    يمكن تغيير حجم الخط باستحدام css
+    هكذا: 
+    <h6 style:"fiont size:--:" example text </h6>
+    -->
+      <!--
+    a=links
+    href "the link"target="_blank"=opens the link in a new tab
+    you can link files throuth <a>:
+    href="the another file.html"  
+    -->
+    <span style="color: blueviolet;">hello world</span>
+    <h1><span style="color: seagreen;">abood_fordy</span></h1>
+    <P>I AM a <u>small programmer</u> ,so i want to learn more about my <span style="color: aquamarine;">future job</span> ,<br> thanks</P>
+    <p><del>200 SR</del>150 SR</p>
+    2<sup>3</sup>
+    h<sub>2</sub>o
+    <p> &reg;	 <span style="color: blue;">ford</span> </p><hr>
+  <a href="contact.html">contact me</a><br>
+    <a href="https://google.com"target="_blank">google(in a new tab)</a><br>
+    <!--global attributes
+    id=identify the text once only
+    class=you can identfy the text many times with the same name
+    -->
+    <!--
+    images= 
+    img:
+    src:the source of the photo
+    alt:alternative/the text that appears if the photo didnt appeared
+    whidth=العرض
+    height=الطول
+    لو الصورة في نفس الملف يمكنك إضافتها هكذا:
+    src="./موقع الملف"
+    لو الصورة مخزنة في الجهاز ولكنها في ملف غير ملف البرنامج يمكن إضافتها هكذا:
+    src="../اختار الملف أو الصورة"
+    -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7QlLn8GnOeM5YUz2PpbslluZUZI5KzRUC5A&s"whidth="150PX" height="150px" alt="fordy">
+    <img src="./entities.png"whidth="200px" height="200px" alt="learning">
+    <!--
+    unordered lists:ul
+    nested list=list in other list
+    to fo a list=ul/ol==>li
+    -->
+    <h3>my skills</h3>
+    <ul>
+      <li>HTML</li>
+      <ul>
+        <li>webs</li>
+        <li>apps</li>
+      </ul>
+      <li>python</li>
+    </ul><hr>
+    <!--
+    ordered list:ol
+    <ol type="a/1/A"> to select the way of the list
+    <ol type="a/1/A" reversed> to order the list reversed way 
+    <ol start="num"> to start the list from a specific number
+    -->
+    <ol start="100">
+     <li>name</li>
+     <li>age</li> 
+    </ol><hr>
+    <ol type="A">
+    <li>name</li>
+    <li>age</li>
+    </ol><hr>
+    <!--table:
+    thead=the first line.tr=table row.td=table data بالترتيب
+    you cam add a border around the table by (border):
+    <table border="any num">
+    tbody=the middle line/s
+    tfoot=the last line
+    يمكن الغاء ترتيب خلية معينة عن طريق colspan:
+    <td colspan:"the cells count">
+    -->
+    <table border="1">
+      <thead>
+        <tr>
+          <td>name</td>
+          <td>age</td>
+          <td>grade</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>abdullah</td>
+          <td>15</td>
+          <td>99</td>
+        </tr>
+        <td>mohammed</td>
+        <td>16</td>
+        <td>94</td>
+        <tr>
+          <td>mostafa</td>
+          <td>19</td>
+          <td>98</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">total</td>
+          <td>270</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!--div:compines many elements in one element to apply a style-->
+    <div>
+      <h3>hello world</h3>
+      <ul>
+        <li>py</li>
+        <li>js</li>
+        <li>html</li>
+      </ul>
+    </div>
+    <!--semantic elements:
+    header:the first section/the nav bar
+    main:the section in the middle
+    footer:the last section
+    -->
+    <!--audio
+    audio src is like the photo src
+    audio commands link: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
+    you must type the file command after src
+    you must add controls to be able to control the audio
+    -->
+    <h1>abdullah</h1>
+    <audio src="./113.mp3" type="audio/mpeg
+    " controls></audio><hr>
+    <!--video
+    the video src is the same to the photo and the audio
+    the aommands list: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
+    you must add the type of the video 
+    you must add controls to be able control the video
+    you can repeat the video automaticly by using loop after controls
+    you can auto play the video whenever the website opened by using auto play command after loop/controls
+    -->
+    <video src="./2024-04-18 06-39-57.mp4" type="video/mp4
+    " controls loop autoplay width="200px" height="200px"></video>
+    <!--form
+    input:to let the user inter something
+    label:to let the user know what he must type
+    inputs:text:anything
+    password:inter the text like this :****
+    submit:appears the submit botton
+    placeholder:enter an info for the user in the same box that user writes in it
+    required:dont let the user skip the cell
+    -->
+    <form>
+      <div>
+        <input type="text" placeholder="name" required>
+      </div><br>
+      <div>
+       <input type="password" placeholder="password" required>
+      </div> <br>
+      <div>
+       <input type="email" placeholder="email" required>
+      </div> <br>
+      <input type="submit">
+    </form><br>
+    <!--form
+    radio:to let the user select one answer from many answers
+    to build form like this: input:type.name.value
+    label: the answer
+    -->
+    <form>
+      <h3>choose a country</h3>
+      <div>
+        <input type="radio" name="country" value="Egypt">
+        <label>Egypt</label>
+      </div>
+      <div>
+        <input type="radio" name="country" value="Saudi arabia">
+        <label>Saudi arabia</label>
+      </div>
+      <div>
+        <input type="radio" name="country" value="Qatar">
+        <label>Qatar</label><hr>
+        <!--form
+        checkbox:to let the user select many anwers
+        form:input:type.name.value
+        label:the anwer
+        -->
+        <h3>choose your skills</h3>
+        <form>
+          <div>
+            <input type="checkbox" name="skill" value="HTML">
+            <label>HTML</label>
+          </div>
+          <div>
+            <input type="checkbox" name="skill" value="python">
+            <label>python</label>
+          </div>
+          <div>
+            <input type="checkbox" name="skill" value="javascript">
+            <label>javascript</label>
+          </div>
+        </form>
+      </div>
+    </form>
+    <!--form
+    textarea:to let the user write a paragraph
+    form:textarea
+    -->
+    <form><textarea name="message" cols="30" rows="10" placeholder="enter a message for us"></textarea></form><hr>
+    <!--form
+    select:to let the user select an item from a long list
+    form:select:option/selected.value
+    selected:to set a specifec option to be the default when the website opened
+    if you want to open a tab when the user select an option follow this:
+    select name:anything siza:1 onchange:window.location.href=this.value;
+    -->
+    <h3>what is your favourite brawser</h3>
+    <form>
+      <select>
+        <option value="1">edge</option>
+        <option value="2">earth</option>
+        <option value="3">brave</option>
+        <option value="4">firefox</option>
+        <option value="5" selected>chrome</option>
+      </select>
+    </form>
+  </body>
+</html>
